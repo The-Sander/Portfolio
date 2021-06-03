@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>ThreeJS Starter</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar ">
+        <ul class="navbar-nav">
+          <div class="nav-item">
+            <a href="#header" class="nav-link  active" id="nav-home">Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="#about-me" class="nav-link " id="nav-about-me">About Me</a>
+          </div>
+            <div class="nav-item">
+              <a href="#projects" class="nav-link " id="nav-projects">Projects</a>
+          </div>
+        </ul>
+      </nav>
+        <div class="wrapper">
+          <div class="content" id="header">
+            <h1 id="title">Sander Backx</h1>
+            <p id="welcome">Welcome to my portfolio</p>
+          </div>
+          <canvas class="header-canvas"></canvas>
+        </div>
+
+        <div class="wrapper">
+          <div class="card" id="about-me">
+            <div class="card-title" id="about-me-title">
+              <h1>About me</h1>
+            </div>
+            <div class="card-content" id = "about-me-content">
+              <div class="card-text" id="about-me-text">
+                <p>
+                  Hello! I'm Sander Backx, a 23 year old student Applied Computer Science at Thomas More Geel. I love to code and I'm very enthousastic about Javascript and Typescript (NodeJS, VueJS, React, ...) and I love learning new things.
+                  <br>When I'm not coding I am making music. Not with an instrument but with software. 
+                  
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <canvas class="about-me-canvas"></canvas> -->
+        </div>
+        <div class="wrapper">
+
+          <div class="project-container" id="projects">
+            <div class="project-nav">
+              <h1 class="project-title">Projects</h1>
+              <ul>
+                <li class="project-nav-item">
+                  <a href="#!" class="project-nav-link">Project 4.0</a>
+                  
+                </li>
+                <li class="project-nav-item">
+                  <a href="#!" class="project-nav-link">Internship</a>
+                </li>
+                <li class="project-nav-item">
+                  <a href="#!" class="project-nav-link">Selfdriving Car</a>
+                </li>
+              </ul>
+            </div>
+            <div class="project-content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis minus error iste mollitia possimus soluta amet, illo officiis excepturi earum?</p>
+            </div>
+          </div>
+
+          <!-- <div class="card" id="projects">
+            <div class="card-content">
+              <div class="card-title" id="projects-title" >
+                <h1>projects</h1>
+              </div>
+
+              <div class="card-text"  id="projects-text">
+                <ul>
+                  <li><a href="#!" class="project-link" data-img="project4">Project 4.0</a>
+                  </li>
+                  <li><a href="#!" class="project-link" data-img="internship">Internship</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+          <!-- <canvas class="about-me-canvas"></canvas> -->
+        </div>
+
+      </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js"
+      integrity="sha512-0bzaetZStCnsUgbCtGVxftzF/L32PNOnrMlYLXwBOKl8cUjTSSDfJVyyJsNwGoI0iE0WUqni2eEfO35kJjFj5g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+     gsap.registerPlugin(CSSRulePlugin);
+
+      const content = CSSRulePlugin.getRule(".content:before");
+      const h1 = document.querySelector("#title");
+      const p = document.querySelector("#welcome");
+      const tl = gsap.timeline();
+      tl.from(content, { cssRule: { scaleX: 0 }, delay: 0.5, duration: 2, ease:"power1" });
+      tl.to(
+        h1,
+        {
+          duration: 4,
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+          y: "30px",
+        },
+        "-=3"
+      ).to(
+        p,
+        {
+          duration: 2,
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+          y: "30px",
+        },
+        "-=3"
+      );
+
+      const nav = document.querySelector(".navbar")
+      nav.addEventListener("mouseenter", function(){
+        nav.classList.add("nav--active")
+      })
+      nav.addEventListener("mouseleave", function(){
+        nav.classList.remove("nav--active")
+      })
+    </script>
+  </body>
+</html>
