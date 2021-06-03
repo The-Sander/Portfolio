@@ -52,41 +52,52 @@
 
           <div class="project-container" id="projects">
             <div class="project-nav">
-              <h1 class="project-title">Projects</h1>
+              <h1 class="project-title project-nav-lin" ><a href="#!" class="project-nav-link" data-show="intro">Projects</a></h1>
               <ul>
                 <li class="project-nav-item">
-                  <a href="#!" class="project-nav-link">Project 4.0</a>
+                  <a href="#!" class="project-nav-link" data-show="selfdriving">Selfdriving Car</a>
+                </li>
+                <li class="project-nav-item">
+                  <a href="#!" class="project-nav-link" data-show="botross">Bot ross</a>
                   
                 </li>
                 <li class="project-nav-item">
-                  <a href="#!" class="project-nav-link">Internship</a>
-                </li>
-                <li class="project-nav-item">
-                  <a href="#!" class="project-nav-link">Selfdriving Car</a>
+                  <a href="#!" class="project-nav-link" data-show="internship">Internship</a>
                 </li>
               </ul>
             </div>
             <div class="project-content">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis minus error iste mollitia possimus soluta amet, illo officiis excepturi earum?</p>
+              <div class="shown" data-content="intro" >
+                <p>Look at my projects! 😀</p>
+              </div>
+              <div class="hidden" data-content="selfdriving">
+                <p>This was a project for my course AI Projects. 
+                  We had the opportunity to choose between different subjects and my colleagues and I chose to try to create a selfdriving car.
+                  <br><br>
+                  I used Fast.ai image regression. Our data existed of game-frames with corresponding controller input which we recorded while driving around. 
+                  This data we used to teach our model to give controller input when handed a game frame. 
+                  This result we then gave to a virtual controller which controlled the game.
+                </p>
+                <button class="project-button"><a class="project-button-link" href="https://sanderbackx.me/#/selfdriving">More info</a></button>
+              </div>
+              <div class="hidden" data-content="botross">
+                <p>This was a project for my course Big Data. 
+                  We were tasked to create an image classifier. We chose to classify paintings and painters.
+                  <br><br>
+                  During this project I worked together with my colleague to create an image classifier using Fast.ai. 
+                  We used Bing api to retreive images from the web which we used for training. Given an image, our model predicts which painter painted the image. 
+                  As an extension we added NST that combines an image and a painting style to create a new image. 
+                  Sadly, this process takes to long to do on the web.
+                </p>
+                <button class="project-button"><a class="project-button-link" href="http://128.199.63.207:5000/">View project</a></button>
+
+              </div>
+              <div class="hidden" data-content="internship">
+                <p>More info soon</p>
+              </div>
             </div>
           </div>
 
-          <!-- <div class="card" id="projects">
-            <div class="card-content">
-              <div class="card-title" id="projects-title" >
-                <h1>projects</h1>
-              </div>
-
-              <div class="card-text"  id="projects-text">
-                <ul>
-                  <li><a href="#!" class="project-link" data-img="project4">Project 4.0</a>
-                  </li>
-                  <li><a href="#!" class="project-link" data-img="internship">Internship</a></li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
-          <!-- <canvas class="about-me-canvas"></canvas> -->
         </div>
 
       </div>
@@ -139,6 +150,22 @@
       nav.addEventListener("mouseleave", function(){
         nav.classList.remove("nav--active")
       })
+
+
+        Array.from(document.querySelectorAll(".project-nav-link")).forEach((project) => {
+          project.addEventListener("click", (event) => {
+            const show  = event.target.getAttribute("data-show")
+            document.querySelectorAll(".project-content div").forEach((content) => {
+              if(content.getAttribute("data-content") == show ){
+                content.classList.remove("hidden")
+                content.classList.add("shown")
+              }else{
+                content.classList.remove("shown")
+                content.classList.add("hidden")
+              }
+            })
+          });
+        });
     </script>
   </body>
 </html>

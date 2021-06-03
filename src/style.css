@@ -227,7 +227,7 @@ body::-webkit-scrollbar-thumb {
 
 .project-container {
   display: flex;
-  width: 90%;
+  width: 90vw;
   margin: auto;
 }
 .project-nav {
@@ -243,6 +243,33 @@ body::-webkit-scrollbar-thumb {
   list-style-type: none;
 }
 .project-nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.shown {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+@keyframes show_text {
+  0% {
+    filter: opacity(0%);
+  }
+  100% {
+    filter: opacity(100%);
+  }
+}
+
+.project-button {
+  padding: 0.5em;
+  border-radius: 0.2em;
+  border: 1px solid hsl(154, 54%, 38%);
+  background: hsl(154, 54%, 33%);
+}
+.project-button-link {
   text-decoration: none;
   color: white;
 }
