@@ -3,6 +3,7 @@
   padding: 0;
   --nav-width: 10em;
   --transition-speed: 0.2s;
+  --fade-speed: 0.5s;
 }
 
 html,
@@ -235,10 +236,6 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
 }
-.project-content {
-  width: 60%;
-}
-
 .project-nav-item {
   list-style-type: none;
 }
@@ -247,20 +244,22 @@ body::-webkit-scrollbar-thumb {
   color: white;
 }
 
+.project-content {
+  position: relative;
+  width: 60%;
+}
+.project-content div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: var(--fade-speed) ease-in-out;
+}
 .shown {
-  display: block;
+  filter: opacity(100%);
+  transition-delay: 0.5s !important;
 }
 .hidden {
-  display: none;
-}
-
-@keyframes show_text {
-  0% {
-    filter: opacity(0%);
-  }
-  100% {
-    filter: opacity(100%);
-  }
+  filter: opacity(0%);
 }
 
 .project-button {
