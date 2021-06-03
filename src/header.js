@@ -112,7 +112,6 @@ const container = document.querySelector(".container");
 container.addEventListener("scroll", onMouseWheel);
 
 let y = 0;
-let z = 0;
 let pos = 0;
 
 let aboutMe = false;
@@ -177,10 +176,6 @@ const tick = () => {
   const elapsedTime = clock.getElapsedTime();
 
   // Update objects
-  // pos += y;
-  // y *= 0.009;
-  // camera.position.y = -pos;
-  // camera.position.z -= pos * 0.04;
 
   if (header) {
     header = false;
@@ -214,8 +209,8 @@ const tick = () => {
     // animateText("#projects-title", "#projects-text", 1);
   }
 
-  particlesMesh.rotation.x = mouse.y * 0.03;
-  particlesMesh.rotation.y = mouse.x * 0.03;
+  particlesMesh.rotation.x = mouse.y * 0.03 + 0.004 * elapsedTime;
+  particlesMesh.rotation.y = mouse.x * 0.03 + 0.006 * elapsedTime;
 
   // camera.position.y = 0.4 * elapsedTime;
   // Update Orbital Controls
