@@ -248,47 +248,54 @@ h1 {
     z-index: 1;
     max-width: 400px;
   }
+  .icon {
+    cursor: default;
+  }
   .img-1 {
     top: 0;
     left: 0;
-    width: 20rem;
-    height: 20rem;
-    .fas {
+    .icon {
+      display: inline-block;
+      transition: 0.3s ease-in-out;
       width: 100%;
       height: 100%;
       font-size: 5rem;
       transform: rotate(-15deg);
       color: $primary;
     }
-    .fas:hover {
+    .icon:hover {
       transform: rotate(-10deg);
     }
   }
   .img-2 {
     top: 12rem;
     right: 0;
-    .fas {
+    .icon {
+      display: inline-block;
+      transition: 0.3s ease-in-out;
       width: 100%;
       height: 100%;
       font-size: 8rem;
       transform: rotate(15deg);
       color: $complementary;
     }
-    .fas:hover {
+    .icon:hover {
       transform: rotate(10deg);
     }
   }
   .img-3 {
     left: 12rem;
     bottom: 0;
-    .fas {
+    .icon {
+      display: inline-block;
+      transition: 0.3s ease-in-out;
       width: 100%;
       height: 100%;
       font-size: 6rem;
       transform: rotate(0deg);
       color: $complementary;
     }
-    .fas:hover {
+    .icon:hover {
       transform: rotate(10deg);
     }
   }

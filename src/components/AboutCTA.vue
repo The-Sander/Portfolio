@@ -7,13 +7,13 @@
       </div>
       <div class="images">
         <div class="img img-1 is-inview">
-          <i class="fas">🎧</i>
+          <span class="icon">🎧</span>
         </div>
         <div class="img img-2 is-inview">
-          <i class="fas">💻</i>
+          <span class="icon">💻</span>
         </div>
         <div class="img img-3 is-inview">
-          <i class="fas">🎮</i>
+          <span class="icon">🎮</span>
         </div>
       </div>
     </div>
