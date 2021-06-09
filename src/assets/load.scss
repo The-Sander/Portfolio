@@ -1,0 +1,26 @@
+.load-bg {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  background-color: transparent;
+  visibility: hidden;
+}
+.loading {
+  position: absolute;
+  height: 7.5rem;
+  width: 7.5rem;
+  border-radius: 20rem;
+  background-color: $off-complementary;
+  color: $white;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%) scale(2);
+}

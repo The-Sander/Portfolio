@@ -1,0 +1,138 @@
+.internship-content {
+  text-align: left;
+  .big {
+    font-size: $h3;
+    line-height: 1.28;
+  }
+  .para {
+    margin-top: $gap-3;
+    line-height: 1.6;
+  }
+  .wrapper {
+    position: relative;
+  }
+  .grid {
+    display: grid;
+    width: 100%;
+    margin: auto;
+  }
+  section {
+    margin-top: $gap-12;
+    padding-bottom: $gap-6;
+  }
+  .intro {
+    max-width: 800px;
+    margin-left: auto;
+    color: $black;
+
+    .images .img {
+      position: absolute;
+      z-index: -10;
+      max-width: 400px;
+    }
+    .img-1 {
+      top: 5rem;
+      left: 0;
+      width: 20rem;
+      height: 20rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 20rem;
+      }
+    }
+    .img-2 {
+      top: 10rem;
+      right: 5rem;
+      img {
+        opacity: 0.1;
+        transform: rotate(25deg);
+        width: 32rem;
+      }
+    }
+  }
+  .carrousel {
+    .steps {
+      max-width: 800px;
+      margin: auto;
+      color: $white;
+      .big {
+        font-size: $h3;
+        line-height: 1.28;
+      }
+      .para {
+        margin-top: $gap-3;
+        line-height: 1.6;
+      }
+    }
+  }
+  .action {
+    padding-top: $gap-12;
+
+    max-width: 800px;
+    display: grid;
+    margin: 0 auto;
+    color: $black;
+    .big {
+      text-align: center;
+      font-size: $h3;
+      line-height: 1.28;
+      padding-bottom: $gap-6;
+    }
+  }
+  .buttons {
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: $gap-6;
+    .button {
+      margin-top: $gap-6;
+    }
+    .button:hover {
+      color: $white;
+      background-color: $off-complementary;
+    }
+  }
+}
+.steps {
+  margin: auto;
+  width: 100%;
+  display: grid;
+  color: $black;
+  .step {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .content {
+      width: 66%;
+    }
+    img {
+      max-width: 600px;
+      max-height: 600px;
+      object-fit: contain;
+    }
+    padding-bottom: $gap-12;
+  }
+  .left {
+    margin-left: auto;
+    padding-left: $gap-4;
+    .big {
+      text-align: left;
+    }
+  }
+  .right {
+    margin-right: auto;
+    padding-right: $gap-4;
+    .big {
+      text-align: right;
+    }
+  }
+  .para {
+    text-align: justify;
+  }
+}

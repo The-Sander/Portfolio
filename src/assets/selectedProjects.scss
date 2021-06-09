@@ -1,0 +1,90 @@
+#work {
+  padding: $gap-12 0;
+  h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    .line {
+      display: block;
+      height: calc(#{$h2}* 1.2);
+      overflow: hidden;
+    }
+    .line:nth-child(2) {
+      position: relative;
+      top: -1rem;
+      left: 7rem;
+      z-index: -1;
+    }
+  }
+  .wrapper {
+    padding-top: $gap-4;
+    position: relative;
+  }
+  .work-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .work-card {
+      cursor: pointer;
+      margin: $gap-4 0;
+      flex-basis: calc(50% - 2rem);
+      .thumb {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .card-content {
+        margin-top: $gap-3;
+        .title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        h3 {
+          font-size: 2em;
+          font-weight: normal;
+        }
+        .arr {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 3rem;
+          width: 3rem;
+          border-radius: 10rem;
+          margin-left: 1rem;
+          position: relative;
+          transition: 0.3s ease-in-out;
+          img {
+            transition: 0.3s ease-in-out;
+            height: 1.5rem;
+            width: 1.5rem;
+          }
+        }
+        .project-info {
+          margin-top: 1rem;
+          width: 100%;
+          display: flex;
+          font-size: 0.9rem;
+          color: $gray;
+        }
+      }
+    }
+    :hover {
+      .arr {
+        img {
+          transform: rotate(-45deg);
+        }
+        color: $white;
+        background-color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+footer {
+  margin-top: $gap-12;
+  padding: $gap-6 0;
+  background-color: $off-white;
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .contact-me {
+    flex: 1 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $gap-6;
+
+    h2 {
+      font-size: 1.5em;
+    }
+    .button {
+      color: $white;
+      background-color: $black;
+    }
+    .button:hover {
+      color: $primary;
+      transform: rotate(-10deg);
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $light-gray;
+    p {
+      padding-top: $gap-6;
+      color: $dark-gray;
+      font-size: 0.6em;
+    }
+  }
+}

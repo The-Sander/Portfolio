@@ -1,0 +1,67 @@
+$car-width: 600px;
+.carrousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .carrousel-content {
+    position: relative;
+    height: 100%;
+    width: $car-width;
+    min-height: 500px;
+    margin: auto;
+    .carrousel-item {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: $car-width;
+      height: 400px;
+      background-color: red;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .hidden {
+      opacity: 0;
+    }
+    .shown {
+      opacity: 1;
+      transition-delay: 0.5s;
+    }
+  }
+
+  .carrousel-circles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $car-width;
+
+    position: absolute;
+    padding-top: 1em;
+    top: 0;
+    left: 0;
+    .circle {
+      margin: 0 auto;
+      border-radius: 10em;
+      width: 3rem;
+      height: 3rem;
+      border: 1px solid $white;
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      transition: 0.5s ease-in-out;
+      color: $white;
+      cursor: pointer;
+      span {
+        margin: auto;
+      }
+    }
+    .active {
+      background-color: $white;
+      color: $off-complementary;
+      transition-delay: 0.5s;
+    }
+    .carrousel-button {
+      color: $white;
+      border: 1px solid $white;
+    }
+  }
+}
