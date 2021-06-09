@@ -65,8 +65,8 @@
 
   .main-section {
     width: 100%;
+    padding: $gap-6 0;
     .section {
-      margin-top: $gap-6;
       display: flex;
       justify-content: space-between;
       .heading {
@@ -82,6 +82,10 @@
         }
       }
     }
+  }
+  .off-complementary {
+    background-color: $off-complementary;
+    color: $dark-complementary;
   }
   .more {
     width: 100%;
