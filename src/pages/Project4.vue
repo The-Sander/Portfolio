@@ -1,6 +1,10 @@
 <template>
   <div id="project4" class="project-page">
-    <ProjectHero title="Project 4.0" :img="image" />
+    <ProjectHero
+      title="Project 4.0"
+      :img="image"
+      info="Typescript &amp; Python"
+    />
     <ProjectTemplate :intro="intro" :link="link" :date="date" :role="role" />
   </div>
 </template>

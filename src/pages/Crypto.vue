@@ -1,6 +1,6 @@
 <template>
   <div id="crypto" class="project-page">
-    <ProjectHero title="Crypto" :img="image" />
+    <ProjectHero title="Crypto" :img="image" info="Typescript" />
     <ProjectTemplate :intro="intro" :link="link" :date="date" :role="role" />
   </div>
 </template>

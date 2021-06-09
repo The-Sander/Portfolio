@@ -1,6 +1,10 @@
 <template>
   <div id="selfdriving" class="project-page">
-    <ProjectHero title="Selfdriving car" :img="image" info="JS &amp; Python" />
+    <ProjectHero
+      title="Selfdriving car"
+      :img="image"
+      info="Python &amp; Fast.ai"
+    />
     <ProjectTemplate :intro="intro" :link="link" :date="date" :role="role" />
     <div class="wrapper">
       <section class="more">

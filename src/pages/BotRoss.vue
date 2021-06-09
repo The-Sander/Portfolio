@@ -1,6 +1,6 @@
 <template>
   <div id="botross" class="project-page">
-    <ProjectHero title="Bot Ross" :img="image" />
+    <ProjectHero title="Bot Ross" :img="image" info="Python &amp; Fast.ai" />
     <ProjectTemplate :intro="intro" :link="link" :date="date" :role="role" />
   </div>
 </template>
