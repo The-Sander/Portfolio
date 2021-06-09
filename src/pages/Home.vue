@@ -2,8 +2,8 @@
   <div>
     <Hero />
     <About />
-    <SelectedProjects />
     <Internship />
+    <SelectedProjects />
     <MoreProjects />
   </div>
 </template>
