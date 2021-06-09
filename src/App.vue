@@ -9,18 +9,12 @@
             <router-link to="/about">About</router-link>
           </li>
           <li><router-link to="/internship">Internship</router-link></li>
-          <!-- <li><router-link to="/">Projects</router-link></li> -->
+          <li><router-link to="/#work" exact>Projects</router-link></li>
         </ul>
       </div>
     </nav>
-    <router-view v-slot="{ Component, route }">
-      <transition
-        v-on:before-leave="beforeLeave"
-        v-on:enter="onEnter"
-        name="fade"
-        mode="out-in"
-        :enter-leave-class="route.meta.leaveClass"
-      >
+    <router-view v-slot="{ Component }">
+      <transition v-on:before-leave="beforeLeave" name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
@@ -66,28 +60,16 @@ export default {
       gsap.to(loadbg, { visibility: "visible" });
       tl.to(loading, {
         css: { scaleX: 25, scaleY: 25 },
-        duration: 0.3,
+        duration: 0.5,
       }).to(loading, {
         css: { scaleX: 0, scaleY: 0 },
-        duration: 0.3,
+        duration: 0.5,
       });
 
       gsap.to(loadbg, { visibility: "hidden", delay: 1 });
-    },
-    onEnter() {
-      console.log("entered");
     },
   },
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>

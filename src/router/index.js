@@ -1,8 +1,4 @@
-import {
-  createRouter,
-  createWebHistory,
-  createWebHashHistory,
-} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Home from "../pages/Home.vue";
 import About from "../pages/About.vue";
 import Internship from "../pages/Internship.vue";
@@ -11,12 +7,24 @@ import Selfdriving from "../pages/Selfdriving.vue";
 import Project4 from "../pages/Project4.vue";
 import BotRoss from "../pages/BotRoss.vue";
 import Crypto from "../pages/Crypto.vue";
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
+  mode: "history",
   routes: [
     {
       path: "/",
+      component: Home,
+      meta: {
+        enterClass: "fade-enter-to",
+        leaveClass: "fade-enter-from",
+      },
+    },
+    {
+      path: "/home",
       component: Home,
       meta: {
         enterClass: "fade-enter-to",
@@ -83,16 +91,17 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        if (to.hash) {
+        if (savedPosition) {
+          resolve({ ...savedPosition });
+        } else if (to.hash) {
           resolve({
-            selector: to.hash,
+            el: to.hash,
+            behavior: "smooth",
           });
-        } else if (savedPosition) {
-          resolve({ left: savedPosition.left, top: savedPosition.top });
         } else {
           resolve({ left: 0, top: 0 });
         }
-      }, 200);
+      }, 400);
     });
   },
 });
