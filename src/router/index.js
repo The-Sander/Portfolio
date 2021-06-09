@@ -13,7 +13,6 @@ if ("scrollRestoration" in history) {
 
 const router = createRouter({
   history: createWebHistory(),
-  mode: "history",
   routes: [
     {
       path: "/",
