@@ -78,4 +78,43 @@
       }
     }
   }
+  .more {
+    width: 100%;
+    padding: $gap-12 0;
+    .content {
+      width: 60%;
+      margin: auto;
+      padding-top: $gap-6;
+    }
+    h4 {
+      margin-bottom: 0.7rem;
+    }
+    .images {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      figure {
+        img {
+          max-height: 100%;
+          max-width: 100%;
+          object-fit: contain;
+        }
+        figcaption {
+          font-size: 0.8em;
+        }
+      }
+      figure:not(:first-child) {
+        padding-left: 4em;
+      }
+    }
+
+    article {
+      margin-top: $gap-6;
+
+      .para {
+        text-align: justify;
+        margin-bottom: 1.7rem;
+      }
+    }
+  }
 }
