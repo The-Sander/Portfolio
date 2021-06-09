@@ -12,6 +12,14 @@
       position: relative;
       left: -0.7rem;
       z-index: 1;
+      .line {
+        display: block;
+        height: calc(#{$h1}* 1.2);
+        overflow: hidden;
+      }
+      .line:nth-child(2) {
+        left: 3rem;
+      }
     }
     .thumb {
       img {
