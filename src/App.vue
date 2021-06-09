@@ -6,10 +6,18 @@
         <router-link to="/" clas="nav-home active">Home</router-link>
         <ul>
           <li>
-            <router-link to="/about">About</router-link>
+            <router-link to="/about" exact-active-class="active"
+              >About</router-link
+            >
           </li>
-          <li><router-link to="/internship">Internship</router-link></li>
-          <li><router-link to="/#work" exact>Projects</router-link></li>
+          <li>
+            <router-link to="/internship">Internship</router-link>
+          </li>
+          <li>
+            <router-link to="/#work" exact-active-class="noactive"
+              >Projects</router-link
+            >
+          </li>
         </ul>
       </div>
     </nav>

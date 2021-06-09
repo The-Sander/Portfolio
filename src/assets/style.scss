@@ -71,6 +71,15 @@ i {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   opacity: 0.7;
+  color: $black;
+
+  .router-link-active {
+    color: $primary;
+  }
+  .router-link-exact-active {
+    color: $primary;
+  }
+
   a {
     font-size: $nav;
   }
@@ -92,13 +101,15 @@ i {
       transition: 0.2s ease-out;
       cursor: pointer;
       a {
-        color: $black;
         text-decoration: none;
         font-weight: $bold-font;
         transition: 0.2s ease-out;
       }
     }
   }
+}
+.noactive {
+  color: $black !important;
 }
 .wrapper {
   display: flex;
@@ -464,7 +475,4 @@ h2 {
 .fade-leave-active,
 .fade-enter-active {
   transition: opacity 0.3s ease-out;
-}
-.router-link-active {
-  color: $primary !important;
 }
