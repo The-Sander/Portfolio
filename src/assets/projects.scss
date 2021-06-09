@@ -53,7 +53,12 @@
       }
       a {
         // padding-right: 4rem;
+        color: $complementary;
         position: relative;
+        transition: 0.3s ease-in-out;
+      }
+      a:hover {
+        color: $primary;
       }
     }
   }
