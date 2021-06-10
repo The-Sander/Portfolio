@@ -80,12 +80,10 @@ import Population from "../assets/js/GeneticAlgorithm/population";
 import Goal from "../assets/js/GeneticAlgorithm/goal";
 import Obstacles from "../assets/js/GeneticAlgorithm/obstacles";
 import ProjectHero from "../components/ProjectHero.vue";
-import ProjectTemplate from "../components/ProjectTemplate.vue";
 
 export default {
   components: {
     ProjectHero,
-    ProjectTemplate,
   },
   data() {
     return {
@@ -102,18 +100,6 @@ export default {
       started: false,
       mutation: 0.01,
 
-      intro:
-        "This was a side project where I created a genetic algorithm in javascript.",
-      link: {
-        title: "",
-        shown: "",
-        url: "",
-      },
-      date: "October 2020",
-      role: [
-        "During this project I worked together with my colleague to create an image classifier using Fast.ai. We used Bing api to retreive images from the web which we used for training. Given an image, our model predicts which painter painted the image.",
-        "",
-      ],
       image: "",
     };
   },
