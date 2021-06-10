@@ -48,9 +48,9 @@ export default {
           onsite: false,
         },
         {
-          title: "Alumniavonden",
+          title: "Alumniavond",
           info: "PHP, Javascript",
-          route: "route",
+          route: "alumni",
           onsite: true,
         },
         {
