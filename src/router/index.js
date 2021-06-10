@@ -8,7 +8,7 @@ import Project4 from "../pages/Project4.vue";
 import BotRoss from "../pages/BotRoss.vue";
 import Crypto from "../pages/Crypto.vue";
 import GeneticAlgorithm from "../pages/GeneticAlgorithm.vue";
-import SortingVisualiser from "../pages/SortingVisualiser.vue";
+import SortingVisualizer from "../pages/SortingVisualizer.vue";
 if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
@@ -98,7 +98,7 @@ const router = createRouter({
     },
     {
       path: "/sorting",
-      component: SortingVisualiser,
+      component: SortingVisualizer,
       meta: {
         enterClass: "fade-enter-to ",
         leaveClass: "fade-leave-from",
