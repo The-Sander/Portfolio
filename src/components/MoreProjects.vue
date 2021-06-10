@@ -34,7 +34,7 @@ export default {
           route: "genalgo",
         },
         {
-          title: "Sorting Visualiser",
+          title: "Sorting Visualizer",
           info: "Javascript, CSS",
           route: "sorting",
         },
