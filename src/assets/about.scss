@@ -94,9 +94,23 @@
     .two-cols {
       width: 90%;
       display: block;
-      .content {
-        position: static;
+      h2 {
+        padding: $gap-3 0;
         width: 100%;
+        font-size: 1.5em;
+        flex-direction: row;
+        .line:first-child {
+          margin-right: 0.8rem;
+        }
+        .line:nth-child(2) {
+          left: 0;
+          top: 0;
+        }
+      }
+      .content {
+        font-size: 0.8em;
+        position: static;
+        width: 80%;
       }
     }
   }
