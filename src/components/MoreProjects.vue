@@ -42,9 +42,9 @@ export default {
           onsite: true,
         },
         {
-          title: "Spotify Clone",
+          title: "Spotify Interface",
           info: "Javascript",
-          route: "https://spotify-clone-4fe07.web.app/#",
+          route: "https://spotifyinterface.netlify.app/#",
           onsite: false,
         },
         {
