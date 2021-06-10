@@ -9,6 +9,8 @@ import BotRoss from "../pages/BotRoss.vue";
 import Crypto from "../pages/Crypto.vue";
 import GeneticAlgorithm from "../pages/GeneticAlgorithm.vue";
 import SortingVisualizer from "../pages/SortingVisualizer.vue";
+import Alumniavond from "../pages/Alumniavond.vue";
+import TheBox from "../pages/TheBox.vue";
 if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
@@ -99,6 +101,14 @@ const router = createRouter({
     {
       path: "/sorting",
       component: SortingVisualizer,
+      meta: {
+        enterClass: "fade-enter-to ",
+        leaveClass: "fade-leave-from",
+      },
+    },
+    {
+      path: "/alumni",
+      component: Alumniavond,
       meta: {
         enterClass: "fade-enter-to ",
         leaveClass: "fade-leave-from",
