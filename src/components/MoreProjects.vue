@@ -11,6 +11,7 @@
             :route="work.route"
             :info="work.info"
             :title="work.title"
+            :onsite="work.onsite"
           />
         </div>
       </div>
@@ -32,26 +33,31 @@ export default {
           title: "Genetic Algorithm",
           info: "Javascript",
           route: "genalgo",
+          onsite: true,
         },
         {
           title: "Sorting Visualizer",
           info: "Javascript, CSS",
           route: "sorting",
+          onsite: true,
         },
         {
           title: "Spotify Clone",
           info: "Javascript",
-          route: "route",
+          route: "https://spotify-clone-4fe07.web.app/#",
+          onsite: false,
         },
         {
           title: "Alumniavonden",
           info: "PHP, Javascript",
           route: "route",
+          onsite: true,
         },
         {
           title: "The Box - Game",
           info: "C++",
           route: "route",
+          onsite: true,
         },
       ],
     };
