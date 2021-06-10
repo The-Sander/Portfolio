@@ -114,6 +114,14 @@ const router = createRouter({
         leaveClass: "fade-leave-from",
       },
     },
+    {
+      path: "/thebox",
+      component: TheBox,
+      meta: {
+        enterClass: "fade-enter-to ",
+        leaveClass: "fade-leave-from",
+      },
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     return new Promise((resolve, reject) => {

@@ -56,7 +56,7 @@ export default {
         {
           title: "The Box - Game",
           info: "C++",
-          route: "route",
+          route: "thebox",
           onsite: true,
         },
       ],
