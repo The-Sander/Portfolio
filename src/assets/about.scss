@@ -1,0 +1,103 @@
+.about-content {
+  text-align: left;
+
+  section {
+    margin-top: $gap-12;
+  }
+  .intro {
+    max-width: 800px;
+    margin-left: auto;
+    position: relative;
+    padding-bottom: $gap-12;
+    img {
+      position: absolute;
+      top: 0;
+      left: -30rem;
+      width: 300px;
+    }
+  }
+  .big {
+    font-size: $h3;
+    line-height: 1.28;
+  }
+  .para {
+    margin-top: $gap-3;
+    color: $black;
+  }
+
+  .two-cols {
+    display: flex;
+    align-items: flex-start;
+    min-width: 40rem;
+    width: 100%;
+    padding-bottom: $gap-12;
+
+    h2 {
+      flex: 1 1;
+      font-size: $h2;
+      line-height: calc(#{$h2}* 1.1);
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .line {
+        display: block;
+        height: calc(#{$h2}* 1.2);
+        overflow: hidden;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: 800px;
+      padding-top: 1em;
+
+      span {
+        flex-basis: 33%;
+        color: $gray;
+      }
+      .full-line {
+        flex-basis: 100%;
+      }
+    }
+  }
+  .buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button {
+    background-color: $primary;
+    transition: 0.3s ease-in-out;
+  }
+  .button:hover {
+    color: $white;
+    transform: rotate(-10deg);
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-name {
+    height: auto !important;
+  }
+  .about-content {
+    .intro {
+      width: 90%;
+
+      img {
+        margin-top: $gap-4 !important;
+        width: 50%;
+        margin: auto;
+        position: static;
+      }
+    }
+    .two-cols {
+      width: 90%;
+      display: block;
+      .content {
+        position: static;
+        width: 100%;
+      }
+    }
+  }
+}

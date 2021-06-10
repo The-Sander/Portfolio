@@ -136,3 +136,42 @@
     text-align: justify;
   }
 }
+@media screen and (max-width: 600px) {
+  .hero-internship {
+    height: auto !important;
+  }
+  .internship-content {
+    .intro {
+      .images {
+        .img-1 {
+          position: static;
+        }
+        .img-2 {
+          display: none;
+        }
+      }
+    }
+    .steps {
+      .step {
+        flex-wrap: wrap;
+        padding-bottom: $gap-6;
+        img {
+          width: 90%;
+          margin: auto;
+          margin-bottom: $gap-6;
+        }
+        .left {
+          margin: auto;
+          padding-left: 0;
+        }
+        .right {
+          margin: auto;
+          padding-right: 0;
+          .big {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

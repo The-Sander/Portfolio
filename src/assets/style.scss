@@ -37,6 +37,7 @@ $ico-dimension: 8rem;
 @import "./geneticalgo.scss";
 @import "./visualizer.scss";
 @import "./mobile-menu.scss";
+@import "./about.scss";
 
 body::-webkit-scrollbar {
   width: 10px;
@@ -116,7 +117,6 @@ i {
 }
 .content {
   position: relative;
-  height: 100vh;
 }
 .wrapper {
   display: flex;
@@ -381,85 +381,6 @@ h2 {
   }
 }
 
-.about-content {
-  text-align: left;
-
-  section {
-    margin-top: $gap-12;
-  }
-  .intro {
-    max-width: 800px;
-    margin-left: auto;
-    position: relative;
-    padding-bottom: $gap-12;
-    img {
-      position: absolute;
-      top: 0;
-      left: -30rem;
-      width: 300px;
-    }
-  }
-  .big {
-    font-size: $h3;
-    line-height: 1.28;
-  }
-  .para {
-    margin-top: $gap-3;
-    color: $black;
-  }
-
-  .two-cols {
-    display: flex;
-    align-items: flex-start;
-    min-width: 40rem;
-    width: 100%;
-    padding-bottom: $gap-12;
-
-    h2 {
-      flex: 1 1;
-      font-size: $h2;
-      line-height: calc(#{$h2}* 1.1);
-      display: inline-flex;
-      flex-direction: column;
-      align-items: flex-start;
-      .line {
-        display: block;
-        height: calc(#{$h2}* 1.2);
-        overflow: hidden;
-      }
-    }
-
-    .content {
-      display: flex;
-      flex-wrap: wrap;
-      flex-basis: 800px;
-      padding-top: 1em;
-
-      span {
-        flex-basis: 33%;
-        color: $gray;
-      }
-      .full-line {
-        flex-basis: 100%;
-      }
-    }
-  }
-  .buttons {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .button {
-    background-color: $primary;
-    transition: 0.3s ease-in-out;
-  }
-  .button:hover {
-    color: $white;
-    transform: rotate(-10deg);
-  }
-}
-
 .bg-complementary {
   background-color: $off-complementary;
 }
@@ -541,8 +462,8 @@ h2 {
           position: absolute;
         }
         .floating-1-wrapper {
-          left: 10%;
-          top: -50%;
+          left: 0;
+          top: 0;
         }
         .floating-1::before {
           content: "";
@@ -567,8 +488,8 @@ h2 {
           animation: move-up-down 2s ease-in-out infinite alternate;
         }
         .floating-3-wrapper {
-          left: 0;
-          top: 130%;
+          left: 5em;
+          bottom: 0em;
         }
         .floating-3 {
           content: "";
