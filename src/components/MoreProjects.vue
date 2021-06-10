@@ -36,7 +36,7 @@ export default {
         {
           title: "Sorting Visualiser",
           info: "Javascript, CSS",
-          route: "route",
+          route: "sorting",
         },
         {
           title: "Spotify Clone",

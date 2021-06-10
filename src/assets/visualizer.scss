@@ -1,0 +1,101 @@
+#visualizer {
+  .more {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .settings {
+    width: 300px;
+  }
+  .button-wrapper {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-wrapper {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrayContainer {
+    border-radius: 15px;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid $gray;
+    margin: auto;
+    background-color: $off-white;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .array-wrapper {
+    max-width: 90%;
+  }
+  .arrayItem {
+    background-color: $complementary;
+    display: inline-block;
+    margin: 0 1px;
+  }
+  .input-wrapper {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 1em 3em;
+    margin: 1em 0.5em;
+    border-radius: 0.5em;
+    background-color: $complementary;
+    color: $white;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: $primary;
+  }
+  .slide-container {
+    padding: $gap-3 0;
+    width: 100%;
+    .label-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slide {
+      width: 100%;
+    }
+    .slide-info {
+      font-size: 0.8em;
+      color: $gray;
+    }
+  }
+  .input-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-container {
+    padding: 1em 0;
+    width: 50%;
+    input {
+      width: 50%;
+      border: 1px solid $light-gray;
+      border-radius: 0.5em;
+      padding: 0.5em;
+    }
+    .input-info {
+      font-size: 0.8em;
+      color: $gray;
+    }
+  }
+}
