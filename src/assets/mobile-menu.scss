@@ -1,4 +1,6 @@
 .mobile-menu {
+  display: none;
+
   overflow: hidden;
   background-color: #333;
   position: fixed;
@@ -8,7 +10,6 @@
   height: 10vh;
 
   background-color: $complementary;
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
   .menu-items {
