@@ -20,7 +20,7 @@
       </section>
     </div>
     <div class="wrapper">
-      <section class="main-section" v-if="role[0].lenght > 0">
+      <section class="main-section" v-if="role[0].length > 0">
         <article class="section">
           <div class="heading">
             <h4>My role</h4>
