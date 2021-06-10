@@ -1,0 +1,26 @@
+.mobile-menu {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+  height: 10vh;
+
+  background-color: $complementary;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  .menu-items {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    a {
+      color: $white;
+    }
+    .noactive {
+      color: $white !important;
+    }
+  }
+}

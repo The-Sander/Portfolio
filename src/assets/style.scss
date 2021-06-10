@@ -36,6 +36,7 @@ $ico-dimension: 8rem;
 @import "./projects.scss";
 @import "./geneticalgo.scss";
 @import "./visualizer.scss";
+@import "./mobile-menu.scss";
 
 body::-webkit-scrollbar {
   width: 10px;
@@ -113,6 +114,10 @@ i {
 .noactive {
   color: $black !important;
 }
+.content {
+  position: relative;
+  height: 100vh;
+}
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -125,6 +130,7 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  height: 100vh;
 }
 
 .hero {
@@ -477,4 +483,205 @@ h2 {
 .fade-leave-active,
 .fade-enter-active {
   transition: opacity 0.3s ease-out;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+
+  .page {
+    height: 90vh;
+
+    .hero {
+      height: 100vh;
+      padding-top: 0em !important;
+      padding-bottom: 0 !important;
+      .wrapper {
+        height: 100%;
+      }
+      .hero-content {
+        left: 0;
+        width: 100%;
+      }
+      h4 {
+        text-align: center;
+      }
+      h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        left: 0;
+      }
+      .line {
+        width: 100%;
+        display: block;
+        height: 2em;
+        overflow: hidden;
+        text-align: center;
+      }
+      .line:nth-child(2) {
+        left: 0;
+        z-index: -1;
+      }
+      .line:nth-child(3) {
+        left: 0;
+        z-index: -1;
+      }
+
+      .floating {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        div {
+          position: absolute;
+        }
+        .floating-1-wrapper {
+          left: 10%;
+          top: -50%;
+        }
+        .floating-1::before {
+          content: "";
+          position: absolute;
+          width: 20rem;
+          height: 20rem;
+          border-radius: 100rem;
+          background-color: transparent;
+          border: 5px solid #eee;
+          animation: move-up-down 2s ease-in-out infinite alternate;
+          animation-delay: -1333ms;
+        }
+        .floating-2 {
+          content: "";
+          position: absolute;
+          width: 20rem;
+          height: 20rem;
+          border-radius: 100rem;
+          background-color: transparent;
+          border: 5px solid $primary;
+          opacity: 0.3;
+          animation: move-up-down 2s ease-in-out infinite alternate;
+        }
+        .floating-3-wrapper {
+          left: 0;
+          top: 130%;
+        }
+        .floating-3 {
+          content: "";
+          position: absolute;
+          width: 20rem;
+          height: 20rem;
+          border-radius: 100rem;
+          background-color: transparent;
+          border: 5px solid $complementary;
+          opacity: 0.3;
+          animation: move-up-down 2s ease-in-out infinite alternate;
+        }
+      }
+    }
+    #about {
+      padding: $gap-6 0;
+      .images {
+        display: none;
+      }
+      .content {
+        height: 100%;
+      }
+    }
+    #internship {
+      padding: $gap-6 0;
+      .content {
+        height: 100%;
+      }
+    }
+    #work {
+      padding: $gap-6 0;
+      padding: 0;
+      h2 {
+        padding: $gap-3 0;
+        width: 100%;
+        font-size: 2em;
+        flex-direction: row;
+        .line:first-child {
+          margin-right: 0.8rem;
+        }
+        .line:nth-child(2) {
+          left: 0;
+          top: 0;
+        }
+      }
+
+      .work-group {
+        padding: $gap-3 0;
+        .work-card {
+          flex-basis: 100%;
+          display: flex;
+          align-items: center;
+          display: block;
+          .thumb {
+            flex: 1 1;
+          }
+          .card-content {
+            width: 100%;
+            padding-right: 0;
+            .title {
+              font-size: 0.6em;
+            }
+          }
+        }
+      }
+    }
+
+    .more-works {
+      .wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+      h2 {
+        padding: $gap-3 0;
+        width: 100%;
+        font-size: 2em;
+        flex-direction: row;
+        .line:first-child {
+          margin-right: 0.8rem;
+        }
+        .line:nth-child(2) {
+          left: 0;
+          top: 0;
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .all-works {
+          width: 100%;
+          .work {
+            display: block;
+            width: 100%;
+            .work-content {
+              .title h3 {
+                font-size: 1em;
+              }
+            }
+          }
+        }
+      }
+    }
+    #footer {
+      padding: $gap-3 0;
+    }
+  }
+
+  .button {
+    height: 5rem;
+    width: 5rem;
+  }
 }

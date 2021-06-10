@@ -1,10 +1,10 @@
 <template>
-  <div class="content">
+  <div class="page-content">
     <Loader />
     <nav class="navbar">
       <div class="wrapper">
         <router-link to="/" clas="nav-home active">Home</router-link>
-        <ul>
+        <ul class="main-menu">
           <li>
             <router-link to="/about" exact-active-class="active"
               >About</router-link
@@ -21,12 +21,34 @@
         </ul>
       </div>
     </nav>
-    <router-view v-slot="{ Component }">
-      <transition v-on:before-leave="beforeLeave" name="fade" mode="out-in">
-        <component :is="Component" />
-      </transition>
-    </router-view>
-    <Footer />
+    <nav class="mobile-menu">
+      <ul class="menu-items">
+        <li>
+          <router-link to="/" exact-active-class="active">Home</router-link>
+        </li>
+        <li>
+          <router-link to="/about" exact-active-class="active"
+            >About</router-link
+          >
+        </li>
+        <li>
+          <router-link to="/internship">Internship</router-link>
+        </li>
+        <li>
+          <router-link to="/#work" exact-active-class="noactive"
+            >Projects</router-link
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="page">
+      <router-view v-slot="{ Component }">
+        <transition v-on:before-leave="beforeLeave" name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+      <Footer />
+    </div>
   </div>
 </template>
 
