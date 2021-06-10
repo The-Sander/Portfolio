@@ -7,6 +7,7 @@ import Selfdriving from "../pages/Selfdriving.vue";
 import Project4 from "../pages/Project4.vue";
 import BotRoss from "../pages/BotRoss.vue";
 import Crypto from "../pages/Crypto.vue";
+import GeneticAlgorithm from "../pages/GeneticAlgorithm.vue";
 if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
@@ -81,6 +82,14 @@ const router = createRouter({
     {
       path: "/crypto",
       component: Crypto,
+      meta: {
+        enterClass: "fade-enter-to ",
+        leaveClass: "fade-leave-from",
+      },
+    },
+    {
+      path: "/genalgo",
+      component: GeneticAlgorithm,
       meta: {
         enterClass: "fade-enter-to ",
         leaveClass: "fade-leave-from",

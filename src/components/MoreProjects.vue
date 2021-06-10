@@ -20,6 +20,7 @@
 
 <script>
 import ProjectListItem from "./ProjectListItem.vue";
+
 export default {
   components: {
     ProjectListItem,
@@ -30,7 +31,7 @@ export default {
         {
           title: "Genetic Algorithm",
           info: "Javascript",
-          route: "route",
+          route: "genalgo",
         },
         {
           title: "Sorting Visualiser",
