@@ -7,6 +7,20 @@
       </div>
       <div class="bottom">
         <p>Portfolio 2021</p>
+        <div class="link-wrapper">
+          <a
+            href="https://github.com/SanderBackx1"
+            target="_blank"
+            class="footer-link"
+            >Github</a
+          >
+          <a
+            href="https://www.linkedin.com/in/sander-backx-951573193/"
+            target="_blank"
+            class="footer-link"
+            >LinkedIn</a
+          >
+        </div>
       </div>
     </div>
   </footer>

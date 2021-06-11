@@ -37,5 +37,16 @@ footer {
       color: $dark-gray;
       font-size: 0.6em;
     }
+    .link-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        margin: 0 $gap-3;
+        padding-top: $gap-6;
+        color: $dark-gray;
+        font-size: 0.6em;
+      }
+    }
   }
 }
