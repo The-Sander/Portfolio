@@ -126,16 +126,17 @@
       <div class="wrapper">
         <section class="action">
           <p class="big">Watch the program in action</p>
-          <div class="embed-vid">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/FaGeOhMGcKM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div class="video-wrapper">
+            <div class="embed-vid">
+              <iframe
+                src="https://www.youtube.com/embed/FaGeOhMGcKM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                class="youtube-video"
+              ></iframe>
+            </div>
           </div>
         </section>
       </div>

@@ -136,12 +136,25 @@
     text-align: justify;
   }
 }
+.action {
+  .video-wrapper {
+    .embed-vid {
+      width: 100%;
+      height: 100%;
+      .youtube-video {
+        width: 560px;
+        height: 400px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 1200px) {
   .hero-internship {
     height: auto !important;
   }
   .internship-content {
     .intro {
+      width: 100%;
       .images {
         .img-1 {
           position: static;
@@ -169,6 +182,17 @@
           padding-right: 0;
           .big {
             text-align: left;
+          }
+        }
+      }
+    }
+    .action {
+      .video-wrapper {
+        width: 100%;
+        .embed-vid {
+          width: 90%;
+          .youtube-video {
+            width: 100%;
           }
         }
       }

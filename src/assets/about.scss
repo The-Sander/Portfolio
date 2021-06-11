@@ -81,9 +81,11 @@
     height: auto !important;
   }
   .about-content {
-    .intro {
+    .grid {
       width: 90%;
-
+    }
+    width: 100%;
+    .intro {
       img {
         margin-top: $gap-4 !important;
         width: 50%;
@@ -91,9 +93,11 @@
         position: static;
       }
     }
+
     .two-cols {
-      width: 90%;
       display: block;
+      width: 100%;
+      min-width: 200px;
       h2 {
         padding: $gap-3 0;
         width: 100%;
@@ -108,9 +112,10 @@
         }
       }
       .content {
+        flex-basis: 90%;
         font-size: 0.8em;
         position: static;
-        width: 80%;
+        width: 90%;
       }
     }
   }
