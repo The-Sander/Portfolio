@@ -108,7 +108,7 @@ export default {
         shown: "Github",
         url: "https://github.com/YoriVerbist/Bot-Ross",
       },
-      date: "October 2020 - November 2020",
+      date: "November 2020 - December 2020",
       role: [
         "During this project I worked together with my colleague to create an image classifier using Fast.ai. We used Bing api to retreive images from the web which we used for training. Given an image, our model predicts which painter painted the image.",
         "As an extension we added NST (Neural Style Transfer) that combines an image and a painting style to create a new image. Sadly, this process takes too long to do on the web.",
