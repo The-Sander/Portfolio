@@ -30,6 +30,12 @@ export default {
     return {
       works: [
         {
+          title: "Spotify Interface",
+          info: "Javascript",
+          route: "https://spotifyinterface.netlify.app/#",
+          onsite: false,
+        },
+        {
           title: "Genetic Algorithm",
           info: "Javascript",
           route: "genalgo",
@@ -40,12 +46,6 @@ export default {
           info: "Javascript, CSS",
           route: "sorting",
           onsite: true,
-        },
-        {
-          title: "Spotify Interface",
-          info: "Javascript",
-          route: "https://spotifyinterface.netlify.app/#",
-          onsite: false,
         },
         {
           title: "Alumniavond",
