@@ -250,7 +250,7 @@ export default {
       link: {
         title: "Code",
         shown: "Github",
-        url: "www.github.com",
+        url: "https://github.com/SanderBackx1/SelfdrivingCar",
       },
       date: "November 2020",
       role: [

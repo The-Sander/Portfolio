@@ -83,9 +83,9 @@ export default {
       intro:
         "Two of my friends and I are working on a trading algorithm. My friends are creating a trading strategy and I am developing a program that runs this strategy.",
       link: {
-        title: "Code",
-        shown: "Github",
-        url: "www.github.com",
+        title: "",
+        shown: "",
+        url: "",
       },
       date: "April 2020 - Present",
       role: [
