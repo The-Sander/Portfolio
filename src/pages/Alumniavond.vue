@@ -40,7 +40,7 @@ export default {
       link: {
         title: "Code",
         shown: "Github",
-        url: "https://github.com/itfactory-tm/ProjectPHP-14",
+        url: "https://github.com/SanderBackx1/php_project",
       },
       date: "February 2020 - April 2020",
       role: [
