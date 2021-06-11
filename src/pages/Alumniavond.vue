@@ -42,7 +42,7 @@ export default {
         shown: "Github",
         url: "https://github.com/itfactory-tm/ProjectPHP-14",
       },
-      date: "February 2020 - May 2020",
+      date: "February 2020 - April 2020",
       role: [
         "During this project I made some of the pages to organise events and get an overview of these events. I also made the pages that allow users to answer to invetations without the need of login credentials.",
         "I am the most proud of the mailing filters I made with Javascript. When sending an invetation to users you can ask questions. These questions and answers can be used as filters for mail adresses.",

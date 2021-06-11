@@ -117,7 +117,7 @@ export default {
         shown: "Youtube",
         url: "https://youtu.be/orC074SIFBo",
       },
-      date: "February 2021",
+      date: "January 2021 - Febraury 2021",
       role: [
         "Building the back end system. Ranging from adding new machines to user authentication. Build with Node/Express in Typescript with a MongoDB database.",
         "I also helped with the Python code to scan the QR code, sending requests to the back end, showing personlized messages and the opening and closing of the locks.",
