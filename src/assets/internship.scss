@@ -25,6 +25,9 @@
     margin-left: auto;
     color: $black;
 
+    .internship-link {
+      color: $primary;
+    }
     .images .img {
       position: absolute;
       z-index: -10;
@@ -49,6 +52,13 @@
         opacity: 0.1;
         transform: rotate(25deg);
         width: 32rem;
+      }
+    }
+    .img-3 {
+      top: 20rem;
+      left: 0;
+      img {
+        width: 20rem;
       }
     }
   }
@@ -156,11 +166,25 @@
     .intro {
       width: 100%;
       .images {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
         .img-1 {
           position: static;
+          img {
+            width: 10rem;
+          }
         }
         .img-2 {
           display: none;
+        }
+        .img-3 {
+          img {
+            width: 10rem;
+          }
+          position: static;
         }
       }
     }

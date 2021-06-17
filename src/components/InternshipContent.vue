@@ -16,6 +16,13 @@
               I used the official Rummikub app to play the game and OpenCV to
               process images.
             </p>
+
+            <p class="para">
+              Thank you
+              <a href="https://arinti.ai/" class="internship-link">Arinti</a>
+              for the amazing internship. It was a great experience and I
+              learned a lot.
+            </p>
           </div>
           <div class="images">
             <div class="img img-1">
@@ -26,6 +33,9 @@
             </div>
             <div class="img img-2">
               <img src="../assets/img/joker.png" alt="" />
+            </div>
+            <div class="img img-3">
+              <img src="../assets/img/arinti-logo.png" alt="" />
             </div>
           </div>
         </section>
