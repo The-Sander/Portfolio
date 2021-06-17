@@ -19,7 +19,12 @@
 
             <p class="para">
               Thank you
-              <a href="https://arinti.ai/" class="internship-link">Arinti</a>
+              <a
+                href="https://arinti.ai/"
+                target="_blank"
+                class="internship-link"
+                >Arinti</a
+              >
               for the amazing internship. It was a great experience and I
               learned a lot.
             </p>
