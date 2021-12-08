@@ -4,13 +4,16 @@
       <div class="wrapper">
         <section class="intro">
           <p class="big">
-            I am a 23 year old student Applied Computer Science at Thomas More
+            I am a 23 year old web developer and teacher who studied Applied Computer Science at Thomas More
             Geel.
           </p>
           <p class="para">
+            During my web development job I work on existing websites and applications as well as creating websites and applications from scratch. My speciality is working with VueJS.
+            I also work at Thomas More Geel where I teach Data Modeling, Data Analysis and Agile.
+          </p>
+          <p class="para">
             During my spare time I love to code. I'm always learning new things
-            and currently I am very enthousiastic about Javascript and
-            Typescript.
+            and currently I am very enthousiastic about Blockchain technologies.
           </p>
           <p class="para">
             I love building things from the ground up. Starting with an empty
@@ -21,7 +24,7 @@
             When I am not coding, I am producing music. I am passionate about
             music and you will rarely find me without music playing in my ears.
           </p>
-          <img src="../assets/img/foto.jpg" alt="" />
+          <img src="../assets/img/foto.jpg" alt />
         </section>
       </div>
       <div class="wrapper">
@@ -31,9 +34,7 @@
             <span class="line">&amp; Tools</span>
           </h2>
           <div class="content">
-            <span v-for="(tool, i) in toolsTechs" v-bind:key="i">
-              {{ tool }}
-            </span>
+            <span v-for="(tool, i) in toolsTechs" v-bind:key="i">{{ tool }}</span>
           </div>
         </section>
       </div>
@@ -53,8 +54,7 @@
             href="../assets/doc/CV_Backx_Sander_English_Portfolio.pdf"
             target="_blank"
             class="button"
-            >Resume</a
-          >
+          >Resume</a>
         </div>
       </div>
     </div>
@@ -80,6 +80,7 @@ export default {
         "Fast.ai",
         "Jupyter notebook",
         "Figma",
+        "Solidity",
       ],
     };
   },
